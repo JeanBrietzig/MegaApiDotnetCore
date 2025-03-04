@@ -1,4 +1,4 @@
-![futuristic_robot_200x200](https://github.com/user-attachments/assets/041f001c-9917-46e1-a682-06448c6ae6de)
+![DALL·E-2025-03-04-15 41 18-A-futuristic-blue-robotic-hero-inspired-by-classic-video-game-characters](https://github.com/user-attachments/assets/546e2111-1d40-46ac-b332-d15fba898ae2)
 
 ```md
 # Megaman API
