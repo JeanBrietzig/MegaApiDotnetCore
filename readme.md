@@ -1,4 +1,4 @@
-Aqui está o arquivo `README.md` para o seu projeto:  
+![DALL·E-2025-03-04-15 35 50-A-futuristic-blue-robotic-hero-inspired-by-classic-video-game-characters](https://github.com/user-attachments/assets/9aa973e1-0566-43ac-bbb4-b09dc50fa5ab)
 
 ```md
 # Megaman API
@@ -29,6 +29,7 @@ Esta API foi desenvolvida utilizando as seguintes tecnologias e práticas:
 - **Newtonsoft.Json** - Biblioteca para manipulação de JSON.
 - Arquitetura baseada em **Controller-Service-Repository**.
 - Uso de **Middlewares** para controle de requisições.
+- Princípios de **RESTful APIs**.
 
 ---
 
@@ -57,7 +58,30 @@ MegamanApi/
 
 ---
 
-## 🔗 Dependências
+## 📜 Normas Técnicas Utilizadas
+
+O projeto segue algumas normas técnicas e boas práticas no desenvolvimento:
+
+- **RESTful API**: Estruturação seguindo os princípios REST.
+- **SOLID**: Princípios para um código modular e de fácil manutenção.
+- **Clean Code**: Código legível e organizado.
+- **Entity Framework Code-First**: Uso do EF Core para modelagem do banco de dados.
+- **Dependency Injection**: Injeção de dependências para melhor escalabilidade.
+- **Swagger** (futuramente) para documentação interativa da API.
+
+---
+
+## 📌 Endpoints
+
+| Método | Rota                     | Descrição |
+|--------|--------------------------|------------|
+| `GET`  | `/api/v1/robots`         | Retorna a lista de todos os robots. |
+| `GET`  | `/api/v1/robots/{id}`    | Retorna um robot específico pelo ID. |
+| `POST` | `/api/v1/robots`         | Cria um novo robot (em construção). |
+
+---
+
+## 📦 Dependências
 
 | Dependência | Descrição |
 |------------|-------------|
@@ -66,49 +90,6 @@ MegamanApi/
 | [Entity Framework Core Design](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/3.1.8) | Ferramentas para design e migração do EF Core |
 | [Entity Framework Core SQL Server](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/3.1.8) | Provider do SQL Server para o EF Core |
 | [Newtonsoft.Json](https://www.newtonsoft.com/json) | Biblioteca para manipulação de JSON |
-
----
-
-## 📌 Endpoints
-
-### 🔹 Listar Todos os Robots
-**Rota:** `GET /api/v1/robots`
-
-**Resposta:**
-```json
-[
-  {
-    "Id": 1,
-    "Code": "DLN/DRN-003",
-    "Name": "Cutman",
-    "HP": 150,
-    "Picture": "https://vignette.wikia.nocookie.net/megaman/images/2/22/Cutman.png"
-  }
-]
-```
-
----
-
-### 🔹 Buscar um Robot pelo ID
-**Rota:** `GET /api/v1/robots/{id}`
-
-**Parâmetros:**  
-- `id`: Identificador do robot desejado.
-
-**Respostas:**
-- `200 OK`: Retorna o robot encontrado.
-- `404 Not Found`: Nenhum robot encontrado.
-
----
-
-### 🔹 Criar um Novo Robot
-**Rota:** `POST /api/v1/robots`
-
-**Corpo da requisição:** *(Em construção)*
-
-**Respostas:**
-- `200 OK`: Confirmação de envio.
-- `400 Bad Request`: Erro na requisição.
 
 ---
 
@@ -142,5 +123,3 @@ Este projeto está sob a licença **MIT**. Sinta-se livre para usá-lo e modific
 
 🚀 **Megaman API** - Desenvolvido com 💙 para os fãs de Megaman!
 ```
-
-Esse `README.md` segue as melhores práticas, organiza as informações e inclui links úteis para facilitar a compreensão do projeto. Precisa de algum ajuste ou melhoria? 😊
